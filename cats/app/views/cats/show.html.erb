@@ -1,4 +1,19 @@
 <h2>Look at all these cats!</h2>
-
+<table>
+    <tr>
+        <th>
+            Cat Characteristic
+        </th>
+        <th>
+            Type
+        </th>
+    </tr>
+    <% [:name, :color, :sex, :age].each do |characteristic|  %>
+        <tr>
+            <td> <%= characteristic %></td>
+            <td> <%= @cat.send(characteristic) %></td>
+        </tr>
+    <% end %>
+</table>
 
 
