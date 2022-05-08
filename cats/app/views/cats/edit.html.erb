@@ -1,13 +1,15 @@
-<h1>New Cat</h1>
-<form action="cat_url" method="post">
+<h1>Edit Cat</h1>
+<form action="cat_url(@cat)" method="post">
+    <input type="hidden" name="_method" value="PATCH">
+
     <label for="cat_name">Name</label>
-    <input type="text" name="cat[name]" id="cat_name">
+    <input type="text" name="cat[name]" id="cat_name" value="<%= @cat.name %>">
 
     <label for="cat_birth_date">Birthday</label>
     <input 
         type="date"
         name="cat[birth_date]"
-        value = cat.birth_date
+        value="<%= @cat.birth_date %>"
         id = "cat_birth_date"
     >
 
@@ -18,13 +20,14 @@
     <label for="cat_sex_female">female</label>
 
     <label for="cat_description">Description</label>
- <textarea name="cat[description]" id="cat_description" cols="30" rows="10" value="<%= @cat.name %>"></textarea>
+    <textarea name="cat[description]" id="cat_description" cols="30" rows="10"> <%= @cat.description %></textarea>
+
     <label for="cat_color">Color</label>
     <select name="cat[color]" id="cat_color">
         <%= Cat::COLORS.each do |one_color| %>
-            <option value= "<%= one_color %>" > <%= one_color %> </option>
+            <option value= "<%= one_color %>"  <%= @cat.color == one_color ? "selected" : "" %> > <%= one_color %> </option>
         <% end %>
     </select>
 
-    <input type="submit" value="Create Cat!">
+    <input type="submit" value="Update Cat!">
 </form>
