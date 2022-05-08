@@ -1,5 +1,5 @@
 <h1>New Cat</h1>
-<form action="<%= cats_url %>" method="post">
+<form action="/cats" method="post">
     <label for="cat_name">Name</label>
     <input type="text" name="cat[name]" id="cat_name">
 
@@ -12,16 +12,18 @@
     >
 
     <label for="cat_sex">Sex</label>
-    <input type="radio" name="cat[sex]" id="cat_sex" value="M">
+    <input type="radio" name="cat[sex]" id="cat_sex_male" value="M">
+    <label for="cat_sex_male">male</label>
     <input type="radio" name="cat[sex]" id="cat_sex" value="F">
+    <label for="cat_sex_female">female</label>
 
     <label for="cat_description">Description</label>
-    <input type="text" name="Description" id="cat_description">
+    <input type="text" name="cat[description]" id="cat_description">
 
     <label for="cat_color">Color</label>
     <select name="cat[color]" id="cat_color">
         <%= Cat::COLORS.each do |one_color| %>
-            <option value= one_color > <%= one_color %> </option>
+            <option value= "<%= one_color %>" > <%= one_color %> </option>
         <% end %>
     </select>
 
