@@ -26,16 +26,13 @@ class CatsController < ApplicationController
     end
 
     def edit
-        debugger
         @cat = Cat.find_by(id: params[:id])
-        debugger
+        
         render :edit
     end 
 
     def update
-        debugger
         @cat = Cat.find_by(id: params[:id])
-        debugger
         if @cat.update_attributes(cat_params)
             redirect_to cat_url(@cat)
         else

@@ -1,5 +1,5 @@
 <h1>Edit Cat</h1>
-<form action="cat_url(@cat)" method="post">
+<form action=" <%= cat_url(@cat) %>" method="post">
     <input type="hidden" name="_method" value="PATCH">
 
     <label for="cat_name">Name</label>

@@ -18,7 +18,8 @@
     <label for="cat_sex_female">female</label>
 
     <label for="cat_description">Description</label>
- <textarea name="cat[description]" id="cat_description" cols="30" rows="10" value="<%= @cat.name %>"></textarea>
+    <textarea name="cat[description]" id="cat_description" cols="30" rows="10"></textarea>
+
     <label for="cat_color">Color</label>
     <select name="cat[color]" id="cat_color">
         <%= Cat::COLORS.each do |one_color| %>

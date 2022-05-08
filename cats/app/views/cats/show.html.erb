@@ -8,7 +8,7 @@
             Type
         </th>
     </tr>
-    <% [:name, :color, :sex, :age].each do |characteristic|  %>
+    <% [:name, :color, :sex, :age, :description].each do |characteristic|  %>
         <tr>
             <td> <%= characteristic %></td>
             <td> <%= @cat.send(characteristic) %></td>
