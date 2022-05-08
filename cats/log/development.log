@@ -839,3 +839,199 @@ NoMethodError - undefined method `characteristic' for #<Cat:0x00007fcbb0018fc8>:
   app/views/cats/show.html.erb:11:in `_app_views_cats_show_html_erb__625242146561732102_70256404019740'
   app/controllers/cats_controller.rb:10:in `show'
 
+Started GET "/cats" for ::1 at 2022-05-08 11:42:16 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/apodavonov3616/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.7.1/lib/active_record/log_subscriber.rb:98
+Processing by CatsController#index as */*
+  Parameters: {"user"=>{"\"username\":"=>"\"vegeta\""}}
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.6ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:3
+  Rendered cats/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 129ms (Views: 119.2ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/cats/new" for ::1 at 2022-05-08 11:42:47 -0400
+Processing by CatsController#new as */*
+  Parameters: {"user"=>{"\"username\":"=>"\"vegeta\""}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+
+SyntaxError - syntax error, unexpected keyword_end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/apodavonov3616/APP_ACADEMY_DAY_FOLDER/w6d5/cats/app/views/cats/new.html.erb:30: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/apodavonov3616/APP_ACADEMY_DAY_FOLDER/w6d5/cats/app/views/cats/new.html.erb:32: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~:
+  app/views/cats/new.html.erb:10:in `'
+
+Started GET "/cats/new" for ::1 at 2022-05-08 11:42:55 -0400
+Processing by CatsController#new as */*
+  Parameters: {"user"=>{"\"username\":"=>"\"vegeta\""}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+
+SyntaxError - syntax error, unexpected keyword_end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/apodavonov3616/APP_ACADEMY_DAY_FOLDER/w6d5/cats/app/views/cats/new.html.erb:30: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/apodavonov3616/APP_ACADEMY_DAY_FOLDER/w6d5/cats/app/views/cats/new.html.erb:32: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~:
+  app/views/cats/new.html.erb:10:in `'
+
+Started GET "/cats/new" for ::1 at 2022-05-08 11:43:16 -0400
+Processing by CatsController#new as */*
+  Parameters: {"user"=>{"\"username\":"=>"\"vegeta\""}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (28.4ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant Cat::COLOR:
+  app/views/cats/new.html.erb:8:in `_app_views_cats_new_html_erb__584201696715742003_47190644536260'
+
+Started GET "/cats/new" for ::1 at 2022-05-08 11:43:35 -0400
+Processing by CatsController#new as */*
+  Parameters: {"user"=>{"\"username\":"=>"\"vegeta\""}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (8.1ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `COLOR' for #<Class:0x00007fc5548bcf10>:
+  app/views/cats/new.html.erb:8:in `_app_views_cats_new_html_erb__584201696715742003_70242762656200'
+
+Started GET "/cats/new" for ::1 at 2022-05-08 11:44:03 -0400
+Processing by CatsController#new as */*
+  Parameters: {"user"=>{"\"username\":"=>"\"vegeta\""}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant Cat::COLOR:
+  app/views/cats/new.html.erb:8:in `_app_views_cats_new_html_erb__584201696715742003_70242757016100'
+
+Started GET "/cats/new" for ::1 at 2022-05-08 11:44:42 -0400
+Processing by CatsController#new as */*
+  Parameters: {"user"=>{"\"username\":"=>"\"vegeta\""}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (314.6ms)
+Completed 500 Internal Server Error in 322ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - undefined local variable or method `cat' for #<#<Class:0x00007fc5548caae8>:0x000055d6d9f01120>
+Did you mean?  catch:
+  app/views/cats/new.html.erb:9:in `block in _app_views_cats_new_html_erb__584201696715742003_47190636897720'
+  app/views/cats/new.html.erb:8:in `_app_views_cats_new_html_erb__584201696715742003_47190636897720'
+
+Started GET "/cats/new" for ::1 at 2022-05-08 11:45:10 -0400
+Processing by CatsController#new as */*
+  Parameters: {"user"=>{"\"username\":"=>"\"vegeta\""}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `color' for nil:NilClass:
+  app/views/cats/new.html.erb:9:in `block in _app_views_cats_new_html_erb__584201696715742003_70242848326500'
+  app/views/cats/new.html.erb:8:in `_app_views_cats_new_html_erb__584201696715742003_70242848326500'
+
+Started GET "/cats/new" for ::1 at 2022-05-08 11:46:45 -0400
+Processing by CatsController#new as */*
+  Parameters: {"user"=>{"\"username\":"=>"\"vegeta\""}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (330.6ms)
+Completed 500 Internal Server Error in 338ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - undefined local variable or method `cat' for #<#<Class:0x00007fc5548caae8>:0x00007fc555a819d0>
+Did you mean?  catch:
+  app/views/cats/new.html.erb:10:in `_app_views_cats_new_html_erb__584201696715742003_70242761393400'
+
+Started GET "/cats/new" for ::1 at 2022-05-08 11:47:25 -0400
+Processing by CatsController#new as */*
+  Parameters: {"user"=>{"\"username\":"=>"\"vegeta\""}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (399.0ms)
+Completed 500 Internal Server Error in 405ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - undefined local variable or method `cat' for #<#<Class:0x00007fc5548caae8>:0x00007fc560139480>
+Did you mean?  catch:
+  app/views/cats/new.html.erb:10:in `_app_views_cats_new_html_erb__584201696715742003_70242848611280'
+
+Started GET "/cats/new" for ::1 at 2022-05-08 11:47:55 -0400
+Processing by CatsController#new as */*
+  Parameters: {"user"=>{"\"username\":"=>"\"vegeta\""}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (414.4ms)
+Completed 500 Internal Server Error in 426ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - undefined local variable or method `cat' for #<#<Class:0x00007fc5548caae8>:0x000055d6db95a760>
+Did you mean?  catch:
+  app/views/cats/new.html.erb:10:in `_app_views_cats_new_html_erb__584201696715742003_47190647741400'
+
+Started GET "/cats/new" for ::1 at 2022-05-08 11:49:00 -0400
+Processing by CatsController#new as */*
+  Parameters: {"user"=>{"\"username\":"=>"\"vegeta\""}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (410.7ms)
+Completed 500 Internal Server Error in 420ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - undefined local variable or method `cat' for #<#<Class:0x00007fc5548caae8>:0x000055d6db6c4aa0>
+Did you mean?  catch:
+  app/views/cats/new.html.erb:10:in `_app_views_cats_new_html_erb__584201696715742003_47190645663500'
+
+Started GET "/cats/new" for ::1 at 2022-05-08 11:49:30 -0400
+Processing by CatsController#new as */*
+  Parameters: {"user"=>{"\"username\":"=>"\"vegeta\""}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `color' for nil:NilClass:
+  app/views/cats/new.html.erb:24:in `block in _app_views_cats_new_html_erb__584201696715742003_70242848531500'
+  app/views/cats/new.html.erb:23:in `_app_views_cats_new_html_erb__584201696715742003_70242848531500'
+
+Started GET "/cats/new" for ::1 at 2022-05-08 11:50:53 -0400
+Processing by CatsController#new as */*
+  Parameters: {"user"=>{"\"username\":"=>"\"vegeta\""}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 19ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats/new" for ::1 at 2022-05-08 11:51:16 -0400
+Processing by CatsController#new as */*
+  Parameters: {"user"=>{"\"username\":"=>"\"vegeta\""}}
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
