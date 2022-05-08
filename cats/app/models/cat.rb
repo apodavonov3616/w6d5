@@ -5,10 +5,10 @@ class Cat < ApplicationRecord
 
     validates :birth_date, :name, :color, :sex, presence: true 
 
-    SEX = [M, F]
+    SEX = ["M", "F"]
     validates :sex, inclusion: SEX
 
-    COLORS = [white, black, blue, striped, brown, bald]
+    COLORS = ['white', 'black', 'blue', 'striped', 'brown', 'bald']
     validates :color, inclusion: COLORS
 
     def age
