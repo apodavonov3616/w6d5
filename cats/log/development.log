@@ -589,3 +589,253 @@ ActiveRecord::RecordNotFound - Couldn't find Cat with 'id'=1:
   [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
   ↳ db/seeds.rb:24
   [1m[36mCat Load (0.6ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+Started GET "/cats/1" for ::1 at 2022-05-07 22:32:14 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/apodavonov3616/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.7.1/lib/active_record/log_subscriber.rb:98
+Processing by CatsController#show as */*
+  Parameters: {"user"=>{"\"username\":"=>"\"vegeta\""}, "id"=>"1"}
+  [1m[36mCat Load (0.4ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:9
+Completed 404 Not Found in 15ms (ActiveRecord: 3.9ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Cat with 'id'=1:
+  app/controllers/cats_controller.rb:9:in `show'
+
+Started GET "/cats" for ::1 at 2022-05-07 22:32:24 -0400
+Processing by CatsController#index as */*
+  Parameters: {"user"=>{"\"username\":"=>"\"vegeta\""}}
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::MissingTemplate - Missing template cats/index, application/index with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/apodavonov3616/APP_ACADEMY_DAY_FOLDER/w6d5/cats/app/views":
+  app/controllers/cats_controller.rb:5:in `index'
+
+  [1m[36mCat Load (0.5ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+Started GET "/cats/14" for ::1 at 2022-05-07 22:34:02 -0400
+Processing by CatsController#show as */*
+  Parameters: {"user"=>{"\"username\":"=>"\"vegeta\""}, "id"=>"14"}
+  [1m[36mCat Load (0.4ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:9
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.4ms)
+
+
+
+ActionView::MissingTemplate - Missing template cats/show, application/show with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/apodavonov3616/APP_ACADEMY_DAY_FOLDER/w6d5/cats/app/views":
+  app/controllers/cats_controller.rb:10:in `show'
+
+Started GET "/cats" for ::1 at 2022-05-07 22:46:23 -0400
+Processing by CatsController#index as */*
+  Parameters: {"user"=>{"\"username\":"=>"\"vegeta\""}}
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::MissingTemplate - Missing template cats/index, application/index with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/apodavonov3616/APP_ACADEMY_DAY_FOLDER/w6d5/cats/app/views":
+  app/controllers/cats_controller.rb:5:in `index'
+
+Started GET "/cats" for ::1 at 2022-05-07 22:47:30 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/apodavonov3616/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.7.1/lib/active_record/log_subscriber.rb:98
+Processing by CatsController#index as */*
+  Parameters: {"user"=>{"\"username\":"=>"\"vegeta\""}}
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::MissingTemplate - Missing template cats/index, application/index with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/apodavonov3616/APP_ACADEMY_DAY_FOLDER/w6d5/cats/app/views":
+  app/controllers/cats_controller.rb:5:in `index'
+
+Started GET "/cats" for ::1 at 2022-05-07 22:47:33 -0400
+Processing by CatsController#index as */*
+  Parameters: {"user"=>{"\"username\":"=>"\"vegeta\""}}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::MissingTemplate - Missing template cats/index, application/index with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/apodavonov3616/APP_ACADEMY_DAY_FOLDER/w6d5/cats/app/views":
+  app/controllers/cats_controller.rb:5:in `index'
+
+Started GET "/cats" for ::1 at 2022-05-07 22:58:23 -0400
+Processing by CatsController#index as */*
+  Parameters: {"user"=>{"\"username\":"=>"\"vegeta\""}}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::MissingTemplate - Missing template cats/index, application/index with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/apodavonov3616/APP_ACADEMY_DAY_FOLDER/w6d5/cats/app/views":
+  app/controllers/cats_controller.rb:5:in `index'
+
+Started GET "/cats" for ::1 at 2022-05-07 23:01:49 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/apodavonov3616/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.7.1/lib/active_record/log_subscriber.rb:98
+Processing by CatsController#index as */*
+  Parameters: {"user"=>{"\"username\":"=>"\"vegeta\""}}
+  Rendering cats/index.html.erb within layouts/application
+  Rendered cats/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 212ms (Views: 199.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats" for ::1 at 2022-05-07 23:02:06 -0400
+Processing by CatsController#index as */*
+  Parameters: {"user"=>{"\"username\":"=>"\"vegeta\""}}
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.9ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:3
+  Rendered cats/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 27ms (Views: 21.5ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/cats/14" for ::1 at 2022-05-07 23:02:24 -0400
+Processing by CatsController#show as */*
+  Parameters: {"user"=>{"\"username\":"=>"\"vegeta\""}, "id"=>"14"}
+  [1m[36mCat Load (0.3ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:9
+  Rendering cats/show.html.erb within layouts/application
+  Rendered cats/show.html.erb within layouts/application (10.1ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.7ms)
+
+
+
+ActionView::MissingTemplate - Missing partial cats/_cat, application/_cat with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/apodavonov3616/APP_ACADEMY_DAY_FOLDER/w6d5/cats/app/views":
+  app/views/cats/show.html.erb:9:in `_app_views_cats_show_html_erb___769998487469617625_70038334041360'
+  app/controllers/cats_controller.rb:10:in `show'
+
+Started GET "/cats/15" for ::1 at 2022-05-07 23:03:29 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/apodavonov3616/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.7.1/lib/active_record/log_subscriber.rb:98
+Processing by CatsController#show as */*
+  Parameters: {"user"=>{"\"username\":"=>"\"vegeta\""}, "id"=>"15"}
+  [1m[36mCat Load (0.6ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:9
+  Rendering cats/show.html.erb within layouts/application
+  Rendered cats/show.html.erb within layouts/application (9.7ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 4.3ms)
+
+
+
+ActionView::MissingTemplate - Missing partial cats/_cat, application/_cat with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/apodavonov3616/APP_ACADEMY_DAY_FOLDER/w6d5/cats/app/views":
+  app/views/cats/show.html.erb:9:in `_app_views_cats_show_html_erb__907645272321309346_47232803365120'
+  app/controllers/cats_controller.rb:10:in `show'
+
+  [1m[36mCat Load (0.3ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+Started GET "/cats/15" for ::1 at 2022-05-07 23:11:41 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/apodavonov3616/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.7.1/lib/active_record/log_subscriber.rb:98
+Processing by CatsController#show as */*
+  Parameters: {"user"=>{"\"username\":"=>"\"vegeta\""}, "id"=>"15"}
+  [1m[36mCat Load (0.4ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:9
+  Rendering cats/show.html.erb within layouts/application
+  Rendered cats/show.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 6.0ms)
+
+
+
+ArgumentError - :birth_date can't be converted to a Time value:
+  app/models/cat.rb:15:in `age'
+  app/views/cats/show.html.erb:11:in `block in _app_views_cats_show_html_erb__625242146561732102_46964086976200'
+  app/views/cats/show.html.erb:9:in `_app_views_cats_show_html_erb__625242146561732102_46964086976200'
+  app/controllers/cats_controller.rb:10:in `show'
+
+Started GET "/cats/15" for ::1 at 2022-05-07 23:12:55 -0400
+Processing by CatsController#show as */*
+  Parameters: {"user"=>{"\"username\":"=>"\"vegeta\""}, "id"=>"15"}
+  [1m[36mCat Load (0.7ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:9
+  Rendering cats/show.html.erb within layouts/application
+  Rendered cats/show.html.erb within layouts/application (319.1ms)
+Completed 500 Internal Server Error in 353ms (ActiveRecord: 6.4ms)
+
+
+
+NameError - undefined local variable or method `show' for #<#<Class:0x00007fcbc4206ad8>:0x00007fcbc42051d8>:
+  app/views/cats/show.html.erb:17:in `_app_views_cats_show_html_erb__625242146561732102_46964085503860'
+  app/controllers/cats_controller.rb:10:in `show'
+
+Started GET "/cats/15" for ::1 at 2022-05-07 23:13:41 -0400
+Processing by CatsController#show as */*
+  Parameters: {"user"=>{"\"username\":"=>"\"vegeta\""}, "id"=>"15"}
+  [1m[36mCat Load (0.7ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:9
+  Rendering cats/show.html.erb within layouts/application
+  Rendered cats/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 182ms (Views: 179.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/cats/15" for ::1 at 2022-05-07 23:15:02 -0400
+Processing by CatsController#show as */*
+  Parameters: {"user"=>{"\"username\":"=>"\"vegeta\""}, "id"=>"15"}
+  [1m[36mCat Load (0.4ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:9
+  Rendering cats/show.html.erb within layouts/application
+  Rendered cats/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cats/15" for ::1 at 2022-05-07 23:15:13 -0400
+Processing by CatsController#show as */*
+  Parameters: {"user"=>{"\"username\":"=>"\"vegeta\""}, "id"=>"15"}
+  [1m[36mCat Load (0.8ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:9
+  Rendering cats/show.html.erb within layouts/application
+  Rendered cats/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/cats/15" for ::1 at 2022-05-07 23:15:52 -0400
+Processing by CatsController#show as */*
+  Parameters: {"user"=>{"\"username\":"=>"\"vegeta\""}, "id"=>"15"}
+  [1m[36mCat Load (0.5ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:9
+  Rendering cats/show.html.erb within layouts/application
+  Rendered cats/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cats/15" for ::1 at 2022-05-07 23:16:30 -0400
+Processing by CatsController#show as */*
+  Parameters: {"user"=>{"\"username\":"=>"\"vegeta\""}, "id"=>"15"}
+  [1m[36mCat Load (0.3ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:9
+  Rendering cats/show.html.erb within layouts/application
+  Rendered cats/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cats/15" for ::1 at 2022-05-07 23:16:58 -0400
+Processing by CatsController#show as */*
+  Parameters: {"user"=>{"\"username\":"=>"\"vegeta\""}, "id"=>"15"}
+  [1m[36mCat Load (0.5ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:9
+  Rendering cats/show.html.erb within layouts/application
+  Rendered cats/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cats/15" for ::1 at 2022-05-07 23:17:33 -0400
+Processing by CatsController#show as */*
+  Parameters: {"user"=>{"\"username\":"=>"\"vegeta\""}, "id"=>"15"}
+  [1m[36mCat Load (1.2ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:9
+  Rendering cats/show.html.erb within layouts/application
+  Rendered cats/show.html.erb within layouts/application (19.3ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 1.2ms)
+
+
+
+NoMethodError - undefined method `characteristic' for #<Cat:0x00007fcbb0018fc8>:
+  app/views/cats/show.html.erb:14:in `block in _app_views_cats_show_html_erb__625242146561732102_70256404019740'
+  app/views/cats/show.html.erb:11:in `_app_views_cats_show_html_erb__625242146561732102_70256404019740'
+  app/controllers/cats_controller.rb:10:in `show'
+

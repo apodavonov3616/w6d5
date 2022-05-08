@@ -12,6 +12,6 @@ class Cat < ApplicationRecord
     validates :color, inclusion: COLORS
 
     def age
-        time_ago_in_words(:birth_date)
+        time_ago_in_words(birth_date)
     end
 end
